@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoazCode - Programmieren ist für ALLE da!</title>
+    <meta name="description" content="Entdecke, wie einfach und spaßig es sein kann, deine eigenen Websites, Spiele und Apps zu erstellen!">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="code-icon">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span class="logo-text">MoazCode</span>
+                </div>
+                <nav class="desktop-nav">
+                    <a href="#what" class="nav-link">Was ist Programmieren?</a>
+                    <a href="#why" class="nav-link">Warum macht es Spaß?</a>
+                    <a href="#how" class="nav-link">Wie anfangen?</a>
+                    <a href="#learn" class="nav-link">Lernressourcen</a>
+                </nav>
+                <button class="menu-button" id="menuButton" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menuIcon">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#what" class="mobile-nav-link">Was ist Programmieren?</a>
+                    <a href="#why" class="mobile-nav-link">Warum macht es Spaß?</a>
+                    <a href="#how" class="mobile-nav-link">Wie anfangen?</a>
+                    <a href="#learn" class="mobile-nav-link">Lernressourcen</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero-title">Programmieren ist für ALLE da!</h1>
+            <p class="hero-subtitle">
+                Entdecke, wie einfach und spaßig es sein kann, deine eigenen Websites, Spiele und Apps zu erstellen!
+            </p>
+            <div class="hero-buttons">
+                <a href="#how" class="primary-button">
+                    Jetzt starten
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="#what" class="secondary-button">
+                    Mehr erfahren
+                </a>
+            </div>
+        </section>
+
+        <!-- Interactive Element -->
+        <section class="interactive-section">
+            <div class="interactive-container">
+                <h3 class="section-subtitle">Probier's gleich aus!</h3>
+                <p class="section-text">Schreibe oder bearbeite den HTML-Code und sieh das Ergebnis sofort:</p>
+                <div class="code-grid">
+                    <div class="code-input-container">
+                        <p class="code-label">Dein Code:</p>
+                        <textarea id="codeInput" class="code-input"><h1>Hallo Herr Böhlendorf</h1>
+<p>lenen Sie <strong>Programmieren</strong>!</p>
+<button style="background-color: purple; color: white; padding: 8px 16px; border: none; border-radius: 4px;">Klick mich</button></textarea>
+                        <button id="runButton" class="run-button">Code ausführen</button>
+                    </div>
+                    <div class="code-output-container">
+                        <p class="code-label">Ergebnis:</p>
+                        <div id="codeOutput" class="code-output">
+                            <h1>Hallo Welt!</h1>
+                            <p>Ich lerne <strong>Programmieren</strong>!</p>
+                            <button style="background-color: purple; color: white; padding: 8px 16px; border: none; border-radius: 4px;">Klick mich</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Programming -->
+        <section id="what" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon purple">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <h2 class="section-title">Was ist Programmieren?</h2>
+                </div>
+                <p class="section-description">
+                    Programmieren ist wie Anweisungen geben. Du sagst dem Computer, was er tun soll - Schritt für Schritt!
+                </p>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3 class="info-title purple">Es ist wie ein Rezept</h3>
+                        <p class="info-text">
+                            Genau wie beim Kochen folgst du einer Reihe von Schritten. Der Computer führt deine Anweisungen genau aus.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="info-title pink">Es ist wie eine neue Sprache</h3>
+                        <p class="info-text">
+                            Du lernst, mit dem Computer zu "sprechen". Es gibt viele Programmiersprachen, aber alle haben das gleiche Ziel!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why is it fun -->
+        <section id="why" class="section dark">
+            <div class="section-container">
+                <div class="section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon yellow">
+                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                        <path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path>
+                        <path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path>
+                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                    </svg>
+                    <h2 class="section-title">Warum macht Programmieren Spaß?</h2>
+                </div>
+                <p class="section-description">
+                    Programmieren ist kreativ, herausfordernd und belohnend!
+                </p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3 class="feature-title yellow">Baue Spiele</h3>
+                        <p class="feature-text">Erstelle deine eigenen Spiele und teile sie mit Freunden!</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon yellow">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-title green">Gestalte Websites</h3>
+                        <p class="feature-text">Zeige deine Ideen der ganzen Welt mit deiner eigenen Website!</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon green">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-title blue">Entwickle Apps</h3>
+                        <p class="feature-text">Löse Probleme mit deinen eigenen Anwendungen!</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon blue">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to start -->
+        <section id="how" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon green">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                    <h2 class="section-title">Wie fängst du an?</h2>
+                </div>
+                <p class="section-description">
+                    Der Einstieg ist einfacher als du denkst!
+                </p>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Wähle eine Programmiersprache</h3>
+                            <p class="step-text">Für Websites: HTML, CSS und JavaScript sind perfekt für Anfänger!</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Finde Lernressourcen</h3>
+                            <p class="step-text">Es gibt viele kostenlose Tutorials und Kurse online!</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Übe mit kleinen Projekten</h3>
+                            <p class="step-text">Beginne mit einfachen Projekten und steigere dich langsam!</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Teile deine Projekte</h3>
+                            <p class="step-text">Zeige anderen, was du gemacht hast und hole dir Feedback!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Resources -->
+        <section id="learn" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon red">
+                        <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                    <h2 class="section-title">Wo kann man lernen?</h2>
+                </div>
+                <p class="section-description">
+                    Es gibt viele kostenlose Ressourcen, um Programmieren zu lernen!
+                </p>
+                <div class="resources-grid">
+                    <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <div class="resource-card">
+                            <h3 class="resource-title blue">freeCodeCamp</h3>
+                            <p class="resource-text">Kostenlose interaktive Kurse für HTML, CSS, JavaScript und mehr.</p>
+                            <div class="resource-cta blue">
+                                Besuchen
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <div class="resource-card">
+                            <h3 class="resource-title green">Codecademy</h3>
+                            <p class="resource-text">Interaktive Lektionen mit sofortigem Feedback.</p>
+                            <div class="resource-cta green">
+                                Besuchen
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=programmieren+lernen+anfänger" target="_blank" rel="noopener noreferrer" class="resource-link">
+                        <div class="resource-card">
+                            <h3 class="resource-title red">YouTube</h3>
+                            <p class="resource-text">Tausende kostenlose Video-Tutorials für Anfänger.</p>
+                            <div class="resource-cta red">
+                                Besuchen
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="code-icon">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span class="logo-text">MoazCode</span>
+                </div>
+                <p class="copyright">
+                    © <span id="currentYear"></span> MoazCode. Programmieren ist für alle da! | Created by Moaz Abdulaziz
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
